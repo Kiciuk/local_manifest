@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github" fetch="https://github.com/"  revision="cm-14.1"  />
+
+<remote  name="Galaxy-MSM8916"
+           fetch="https://github.com"
+           review="review.msm8916.com"
+           revision="cm-14.1" />
+
+<remote  name="Kiciuk"
+           fetch="https://github.com/Kiciuk/"
+           revision="cm-14.1" />
+
+
+
+<!-- Galaxy J5 (SM-J500H - j53gxx) || (J500F-G-M-Y - j5lte) || (J500FN - j5nlte) || (J5008 - j5ltechn) || (J510FN - j5xnlte) -->
+  <project path="device/samsung/j5-common" name="Galaxy-MSM8916/android_device_samsung_j5-common" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="device/samsung/j53gxx" name="Galaxy-MSM8916/android_device_samsung_j53gxx" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="device/samsung/j5lte" name="Galaxy-MSM8916/android_device_samsung_j5lte" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="device/samsung/j5ltechn" name="Galaxy-MSM8916/android_device_samsung_j5ltechn" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="device/samsung/j5nlte" name="Galaxy-MSM8916/android_device_samsung_j5nlte" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="device/samsung/j5xnlte" name="Galaxy-MSM8916/android_device_samsung_j5xnlte" groups="device" remote="Galaxy-MSM8916"/>
+
+
+<!-- Samsung MSM8916 Common Repos -->
+  <project path="device/samsung/msm8916-common" name="android_device_samsung_msm8916-common" groups="device" remote="Kiciuk"/>
+  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" groups="device" remote="github"/>
+
+
+ <!-- Dependencies -->
+  <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github"/>
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github"/>
+  
+  
+ <!-- Samsung Hardware Repo -->
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github"/>
+
+  
+ <!-- Common Samsung MSM8916 Kernel -->
+  <project path="kernel/samsung/msm8916" name="android_kernel_samsung_msm8916" remote="Kiciuk"/>
+
+
+
+
+<!-- Vendor Trees For All Device Trees -->
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" groups="device" remote="Kiciuk"/>
+
+
+
+<!-- Bluetooth -->
+<project path="system/bt" name="LineageOS/android_system_bt"  remote="github"/>
+
+</manifest>
+
+
+
+
+
